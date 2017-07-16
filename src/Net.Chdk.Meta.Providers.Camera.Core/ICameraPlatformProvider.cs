@@ -6,7 +6,7 @@ namespace Net.Chdk.Meta.Providers.Camera
 {
     public interface ICameraPlatformProvider
     {
-        PlatformData GetPlatform(string key, IDictionary<string, PlatformData> platform);
-        TreePlatformData GetTree(string key, IDictionary<string, TreePlatformData> tree);
+        PlatformData GetPlatform(string key, IDictionary<string, PlatformData> platform, string productName);
+        TreePlatformData GetTree(string key, IDictionary<string, TreePlatformData> tree, string productName);
     }
 }

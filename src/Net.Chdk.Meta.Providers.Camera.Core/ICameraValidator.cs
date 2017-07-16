@@ -6,6 +6,6 @@ namespace Net.Chdk.Meta.Providers.Camera
 {
     public interface ICameraValidator
     {
-        void Validate(IDictionary<string, ListPlatformData> list, IDictionary<string, TreePlatformData> tree);
+        void Validate(IDictionary<string, ListPlatformData> list, IDictionary<string, TreePlatformData> tree, string productName);
     }
 }

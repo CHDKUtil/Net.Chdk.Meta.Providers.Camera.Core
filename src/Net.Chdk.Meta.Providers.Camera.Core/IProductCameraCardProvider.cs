@@ -3,9 +3,9 @@ using Net.Chdk.Meta.Model.CameraTree;
 
 namespace Net.Chdk.Meta.Providers.Camera
 {
-    public interface ICameraCardProvider<TCard>
+    public interface IProductCameraCardProvider<TCard> : IProductNameProvider
         where TCard : CardData
     {
-        TCard GetCard(uint modelId, TreeCardData card, string productName);
+        TCard GetCard(uint modelId, TreeCardData card);
     }
 }

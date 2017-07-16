@@ -9,6 +9,6 @@ namespace Net.Chdk.Meta.Providers.Camera
         where TModel : CameraModelData
         where TCard : CardData
     {
-        TCamera GetCamera(uint modelId, string platform, ListPlatformData list, TreePlatformData tree);
+        TCamera GetCamera(uint modelId, string platform, ListPlatformData list, TreePlatformData tree, string productName);
     }
 }

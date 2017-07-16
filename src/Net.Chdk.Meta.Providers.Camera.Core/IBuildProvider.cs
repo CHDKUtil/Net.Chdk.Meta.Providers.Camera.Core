@@ -11,6 +11,7 @@ namespace Net.Chdk.Meta.Providers.Camera
         where TModel : CameraModelData
         where TCard : CardData
     {
-        IDictionary<string, TCamera> GetCameras(IDictionary<string, PlatformData> platforms, IDictionary<string, ListPlatformData> list, IDictionary<string, TreePlatformData> tree);
+        IDictionary<string, TCamera> GetCameras(IDictionary<string, PlatformData> platforms, IDictionary<string, ListPlatformData> list, IDictionary<string, TreePlatformData> tree,
+            string productName);
     }
 }

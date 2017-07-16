@@ -4,6 +4,6 @@ namespace Net.Chdk.Meta.Providers.Camera
 {
     public interface IEncodingProvider
     {
-        EncodingData GetEncoding(uint version);
+        EncodingData GetEncoding(uint version, string categoryName);
     }
 }
